@@ -1,0 +1,6 @@
+TLB, that is, Tranlation Look Aside Buffer is hardware which is used to decrease the average access time in non-contiguous 
+memory allocation scheme.
+Every time a CPU generates a logical address it has to search for the frame corresponding to a page.
+And now as there are many displacements within a single page, the accession to main memory for finding the frame for the same page will be multiple times which increases the access time. So the first time we found the frame corresponding to a page, we store this “page-frame” entry in the TLB,
+so that if we need it again we could simply get it just by looking in the TLB.
+The accession time of TLB, being a hardware is less than that of Main memory.
